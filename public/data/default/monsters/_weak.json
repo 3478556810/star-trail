@@ -1,0 +1,98 @@
+[
+  {
+    "id": "slime",
+    "name": "史莱姆",
+    "tag": "weak",
+    "isBoss": false,
+    "baseHp": 800,
+    "baseAtk": 220,
+    "baseDef": 70,
+    "exp": 80,
+    "materials": [
+      { "id": "slime_gel", "name": "粘稠凝胶", "dropRate": 55, "qty": 1 },
+      { "id": "iron_ore", "name": "铁矿石", "dropRate": 35, "qty": 1 }
+    ],
+    "icon": "mdi:blur",
+    "element": "water",
+    "critRate": 5,
+    "critDmg": 30,
+    "lifesteal": 0,
+    "luck": 0,
+    "skillsText": "[{\"name\":\"粘液撞击\",\"mpCost\":0,\"baseMul\":1.4,\"effects\":[]}]",
+    "minLevel": 1,
+    "maxLevel": 5,
+    "levelRange": [1, 99]
+  },
+  {
+    "id": "green_slime",
+    "name": "翠绿史莱姆",
+    "tag": "weak",
+    "isBoss": false,
+    "baseHp": 950,
+    "baseAtk": 240,
+    "baseDef": 85,
+    "exp": 90,
+    "materials": [
+      { "id": "slime_gel", "name": "粘稠凝胶", "dropRate": 55, "qty": 1 },
+      { "id": "iron_ore", "name": "铁矿石", "dropRate": 35, "qty": 1 }
+    ],
+    "icon": "mdi:blur-linear",
+    "element": "grass",
+    "critRate": 5,
+    "critDmg": 30,
+    "lifesteal": 0,
+    "luck": 0,
+    "skillsText": "[{\"name\":\"毒液溅射\",\"mpCost\":0,\"baseMul\":1.6,\"effects\":[{\"type\":\"dot\",\"value\":0.10,\"duration\":3,\"chance\":50}]}]",
+    "minLevel": 1,
+    "maxLevel": 6,
+    "levelRange": [1, 99]
+  },
+  {
+    "id": "goblin",
+    "name": "暗牙劫掠者",
+    "tag": "weak",
+    "isBoss": false,
+    "baseHp": 1100,
+    "baseAtk": 260,
+    "baseDef": 90,
+    "exp": 110,
+    "materials": [
+      { "id": "goblin_fang", "name": "暗牙碎片", "dropRate": 55, "qty": 1 },
+      { "id": "iron_ore", "name": "铁矿石", "dropRate": 40, "qty": 1 }
+    ],
+    "icon": "mdi:alien",
+    "element": "",
+    "critRate": 8,
+    "critDmg": 40,
+    "lifesteal": 0,
+    "luck": 0,
+    "skillsText": "[{\"name\":\"投石\",\"mpCost\":0,\"baseMul\":1.8,\"effects\":[]}]",
+    "minLevel": 2,
+    "maxLevel": 99,
+    "levelRange": [2, 99]
+  },
+  {
+    "id": "goblin_scout",
+    "name": "暗牙斥候",
+    "tag": "weak",
+    "isBoss": false,
+    "baseHp": 1050,
+    "baseAtk": 250,
+    "baseDef": 80,
+    "exp": 120,
+    "materials": [
+      { "id": "goblin_fang", "name": "暗牙碎片", "dropRate": 50, "qty": 1 },
+      { "id": "iron_ore", "name": "铁矿石", "dropRate": 40, "qty": 1 }
+    ],
+    "icon": "mdi:alien-outline",
+    "element": "wind",
+    "critRate": 18,
+    "critDmg": 50,
+    "lifesteal": 0,
+    "luck": 5,
+    "skillsText": "[{\"name\":\"飞沙走石\",\"mpCost\":0,\"baseMul\":2.0,\"effects\":[]}]",
+    "minLevel": 2,
+    "maxLevel": 99,
+    "levelRange": [2, 99]
+  }
+]
