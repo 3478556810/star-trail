@@ -97,7 +97,7 @@ RESTful API + PostgreSQL 事务 + Redis 缓存：
 
 ```mermaid
 graph TB
-    subgraph 前端 (Vue 3 + Vite)
+    subgraph 前端[前端 Vue3 + Vite]
         MV[MainScreen.vue] --> BS[BattleScene.vue]
         MV --> P[各面板组件<br/>锻造/宝石/交易/房间/星图]
         P --> S[Pinia Store]
@@ -105,7 +105,7 @@ graph TB
         S -->|HTTP| API[Market API]
     end
 
-    subgraph 后端 (Go 1.21+)
+    subgraph 后端[后端 Go 1.21+]
         API -->|/api/market/*| MH[Market Handler]
         WS -->|/ws| WH[WebSocket Handler]
         WH --> MM[Match Manager]
@@ -114,8 +114,8 @@ graph TB
         MH --> RD[(Redis 7)]
     end
 
-    Vite[Vite Dev Proxy] -->|/api → localhost:8080| API
-    Vite -->|/ws → ws://localhost:8080| WS
+    Vite[Vite Dev Proxy] -->|"/api -> localhost:8080"| API
+    Vite -->|"/ws -> ws://localhost:8080"| WS
 ```
 
 ### 请求流程
@@ -346,9 +346,16 @@ Content-Type: application/json
 ## 界面展示
 
 
-**副本 BOSS 阶段切换与评分**
-![BOSS 阶段](docs/boss_phase.gif)
-印记动画、动态血条、阶段特效与战斗胜利后的评分面板。
+**副本 BOSS 战：阶段切换与评分**
+
+![阶段切换](docs/boss_phase1.gif)  
+*BOSS 阶段转换，触发全屏特效与台词*
+
+![印记动画](docs/boss_phase2.gif)  
+*印记叠加与引爆，动态伤害反馈*
+
+![评分结算](docs/boss_phase3.gif)  
+*战斗胜利评分面板，奖励展示*
 
 **星图（被动技能树）**
 ![星图](docs/talent_grid.gif)
